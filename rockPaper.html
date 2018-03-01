@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="UTF-8"> 
+	<title>Rock Paper Scissors</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+
+let plays = ['rock', 'paper', 'scissors'];
+
+function computerPlay(){
+	return plays[Math.floor(Math.random() * plays.length)];
+}
+
+let computerSelection = computerPlay();
+let playerSelection = prompt().toLowerCase(); 
+
+function round(){
+if (computerSelection == playerSelection) {
+	console.log("tie!");
+} else if (computerSelection == 'paper') {
+	console.log("You Win!");
+}	else {
+	console.log("Code wins!")
+}
+
+let fiveRoundGame;
+
+function game(){
+	for (fiveRoundGame = 0; step < 4; step++) {
+		return game();
+	}
+}
+};
+
+console.log("The player chose:")
+console.log(playerSelection);
+console.log("The computer chose:")
+console.log(computerSelection);
+console.log(round());
+
+
+
+</script>
+
+</body>
+</html>
